@@ -10,7 +10,7 @@ DATA_PATH = './DataSets'
 MODEL_PATH = './Models'
 DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 BATCH_SIZE = 512
-EPOCH = 10
+EPOCH = 40
 
 print('Loading train set...')
 train_set = dataLoader.loadTrain_set(DATA_PATH)
