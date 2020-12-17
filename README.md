@@ -8,6 +8,7 @@
 
 使用的环境：
 
+* `Python 3.8.5(Anaconda)`
 * `PyTorch 1.7.1`
 * `CUDA 11.1`
 
