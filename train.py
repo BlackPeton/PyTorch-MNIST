@@ -1,5 +1,6 @@
 import math
 import torch
+import os
 
 from utils import dataLoader
 from cnn import simple_net
@@ -59,4 +60,6 @@ for epoch in range(EPOCH):
         epoch + 1, val_loss / len(train_set), 100 * num_correct / len(train_set)))
 # 保存整个网络
 print('Saving the model...')
+if not os.path.exists(MODEL_PATH):
+    os.makedirs(MODEL_PATH)
 torch.save(model, MODEL_PATH + '/MyCNN_MNIST.pkl')
